@@ -42,13 +42,13 @@ const TextAnalyzer = () => {
   return (
     <div style={{ maxWidth: '600px', margin: 'auto', padding: '20px', backgroundColor: '#fff', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)' }}>
       <textarea
-        style={{ width: '100%', marginBottom: '20px', padding: '15px', fontSize: '16px' }}
+        style={{ width: '100%', height:'200px',marginBottom: '20px', padding: '15px', fontSize: '16px' }}
         placeholder="Enter text here..."
         value={text}
         onChange={(e) => setText(e.target.value)}
       />
       <button
-        style={{ cursor: 'pointer', padding: '15px', backgroundColor: '#4caf50', color: 'white', border: 'none', borderRadius: '4px' }}
+        style={{ cursor: 'pointer', padding: '15px', backgroundColor: 'blue', color: 'white', border: 'none', borderRadius: '4px' }}
         onClick={analyzeText}
       >
         Analyze
